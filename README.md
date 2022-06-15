@@ -23,7 +23,7 @@ Requirements
 
 #### Data Preparation
 
-데이터 파일은 모든 요약본들을 포함하고 있는 하나의 큰 XML 파일이다. 하나의 요약본은 `<doc>` 요소로 포함되어있다. 데이터에 편하게 접근하기 위해 문서들을 **[Python dataclass](https://realpython.com/python-data-classes/)**로 표현할 것이다. 그리고 제목과 내용을 병합한 property를 추가할 것이. `title_documents.py`   
+데이터 파일은 모든 요약본들을 포함하고 있는 하나의 큰 XML 파일이다. 하나의 요약본은 `<doc>` 요소로 포함되어있다. 데이터에 편하게 접근하기 위해 문서들을 [Python dataclass](https://realpython.com/python-data-classes/)로 표현할 것이다. 그리고 제목과 내용을 병합한 property를 추가할 것이. `title_documents.py`   
 
 그 후, `Abstract` 오브젝트의 인스턴스들을 만들기 위해  XML로부터 요약본들의 데이터를 추출한다. 먼저 전체 파일을 메모리에 로드하지 않고 gzipped XML을 스트림한다. 각 문서에는 로딩 순서대로 'ID'를 부여한다. `load.py`
 
